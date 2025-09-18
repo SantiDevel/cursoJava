@@ -90,5 +90,6 @@ public class EjemploString {
         System.out.println(fin - inicial);
         System.out.println("c = " + c);
         System.out.println("sb = " + sb.toString());
+
     }
 }
