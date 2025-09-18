@@ -92,6 +92,5 @@ public class EjemploString {
         System.out.println("sb = " + sb.toString());
         */
 
-
     }
 }
