@@ -68,8 +68,8 @@ public class EjemploString {
         */
 
         /*
+
         * Ejemplo String test concat
-        */
 
         String a = "a";
         String b = "b";
@@ -90,5 +90,8 @@ public class EjemploString {
         System.out.println(fin - inicial);
         System.out.println("c = " + c);
         System.out.println("sb = " + sb.toString());
+        */
+
+
     }
 }
