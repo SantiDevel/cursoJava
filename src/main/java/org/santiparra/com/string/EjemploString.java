@@ -92,5 +92,104 @@ public class EjemploString {
         System.out.println("sb = " + sb.toString());
         */
 
+        /*
+
+        * Ejemplo de validar un String
+
+        String curso = null;
+
+        boolean esNull = curso == null;
+
+        System.out.println("esNull = " + esNull);
+
+        if(esNull) {
+            curso = " ";//"Programacion Java";
+        }
+        boolean esVacio = curso.length() == 0;
+
+        System.out.println("esVacio = " + esVacio);
+
+        boolean esVacio2 = curso.isEmpty();
+        System.out.println("esVacio2 = " + esVacio2);
+
+        boolean esVacio3 = curso.isBlank(); //es mas estricto que isEmpty ya que ese valida si es null y tambien valida si es disinto que empty y tambien mira si tiene contenido en blanco
+        System.out.println("esVacio3 = " + esVacio3);
+
+        if (esVacio3 == false) {
+            System.out.println(curso.toUpperCase());
+            System.out.println("Bienvenido al curso ".concat(curso));
+        }
+        */
+
+        /*
+        * String metodos
+
+        String nombre = "Santi";
+
+        System.out.println("nombre.length() = " + nombre.length());
+        System.out.println("nombre.toUpperCase() = " + nombre.toUpperCase());
+        System.out.println("nombre.toLowerCase() = " + nombre.toLowerCase());
+        System.out.println("nombre.equals(\"Santi\") = " + nombre.equals("Santi"));
+        System.out.println("nombre.equals(\"Santi\") = " + nombre.equals("santi"));
+        System.out.println("nombre.equalsIgnoreCase(\"santi\") = " + nombre.equalsIgnoreCase("santi"));
+        System.out.println("nombre.compareTo(\"Santi\") = " + nombre.compareTo("Santi"));
+        System.out.println("nombre.charAt(1) = " + nombre.charAt(1));
+        System.out.println("nombre.charAt(nombre.length()-1) = " + nombre.charAt(nombre.length()-1));
+        System.out.println("nombre.substring(1) = " + nombre.substring(1));
+        System.out.println("nombre.substring(1,4) = " + nombre.substring(1,4)); // el endIndex no se tomara!!
+
+        String trabalenguas = "trabalenguas";
+        System.out.println("trabalenguas.replace(\"a\",\".\") = " + trabalenguas.replace("a","."));
+        System.out.println("trabalenguas = " + trabalenguas);
+        System.out.println("trabalenguas.indexOf('a') = " + trabalenguas.indexOf('a')); // el indeOf del String devuelve el indice del primer caracter que se encuentre!
+        System.out.println("trabalenguas.lastIndexOf('a') = " + trabalenguas.lastIndexOf('a')); // lastIndexOf devuelve el indice del ultimo caracter que se encuentre!
+        System.out.println("trabalenguas.contains(\"t\") = " + trabalenguas.contains("t")); // el contains devuelve true si el String contiene el parametro
+        System.out.println("trabalenguas.startsWith(\"lenguas\") = " + trabalenguas.startsWith("lenguas"));
+        System.out.println("trabalenguas.startsWith(\"tr\") = " + trabalenguas.startsWith("tr"));
+        System.out.println("trabalenguas.endsWith(\"as\") = " + trabalenguas.endsWith("as"));
+        System.out.println("    trabalenguas ");
+        System.out.println("  trabalenguas ".trim());
+        */
+
+        /*
+
+        * String extenciones de archivos
+
+        String archivo = "alguna_iamgen.jpeg";
+        int i = archivo.lastIndexOf(".");
+        System.out.println("archivo.length() = " + archivo.length());
+        System.out.println("archivo = " + archivo.substring(i+1));
+        */
+
+        /*
+        * String metodos array
+        */
+
+        String trabalenguas = "trabalenguas";
+        System.out.println("trabalenguas.length() = " + trabalenguas.length()); // el lenght en un string es un metodo!!
+        System.out.println("trabalenguas.toCharArray() = " + trabalenguas.toCharArray());
+
+        char[] caracteres = trabalenguas.toCharArray();
+        int largo = caracteres.length; // aqui el lenght en un arreglo es una propiedad!!
+        System.out.println("largo = " + largo);
+        for (int i = 0; i <largo; i++){
+            System.out.print(caracteres[i]);
+        }
+
+        System.out.println("\ntrabalenguas = " + trabalenguas.split("a")); // el metodo split devuelve un arreglo de Strings!!
+
+        String[] caracteres2 = trabalenguas.split("a");
+        int largo2 = caracteres2.length;
+        for(int j = 0; j < largo2; j++){
+            System.out.println(caracteres2[j]);
+        }
+
+        String archivo = "alguna.imagen.jpeg";
+        String[] archivoarr = archivo.split("\\."); // con el \\ o []  convertiria el . en un caracter!!
+        int largo3 = archivoarr.length;
+        for(int k = 0; k < largo3; k++){
+            System.out.println(archivoarr[k]);
+        }
+        System.out.println("Extencion = " + archivoarr[largo3 -1]);
     }
 }
