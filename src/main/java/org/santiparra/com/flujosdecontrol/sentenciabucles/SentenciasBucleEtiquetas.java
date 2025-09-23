@@ -7,7 +7,7 @@ public class SentenciasBucleEtiquetas {
         bucle:
         for (int i = 1; i <= 7; i++) {
             int j = 1;
-            while ( j <= 8) {
+            while (j <= 8) {
                 if (i == 6 || i == 7) {
                     System.out.println("Dia " + i + ": descanso de fin de semana!");
                     continue bucle;
@@ -23,7 +23,7 @@ public class SentenciasBucleEtiquetas {
 
             System.out.println();
             int j = 0;
-            while ( j < 5) {
+            while (j < 5) {
                 if (i == 2) {
                     continue bucle1;
                 }

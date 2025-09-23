@@ -12,9 +12,9 @@ public class SentenciasBucleEtiquetasBuscar {
         int cantidad = 0;
         char letra = 'g';
         buscar:
-        for(int i = 0; i <= maxFrase;){
+        for (int i = 0; i <= maxFrase; ) {
             int k = i;
-            for(int j = 0; j < maxPalabra; j++) {
+            for (int j = 0; j < maxPalabra; j++) {
                 if (frase.charAt(k++) != palabra.charAt(j)) {
                     i++;
                     continue buscar;
@@ -23,6 +23,6 @@ public class SentenciasBucleEtiquetasBuscar {
             cantidad++;
             i = i + maxPalabra;
         }
-        System.out.println("Encontrado = " + cantidad + " veces la palabra '"+palabra+"' en la frase");
+        System.out.println("Encontrado = " + cantidad + " veces la palabra '" + palabra + "' en la frase");
     }
 }
